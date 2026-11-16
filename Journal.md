@@ -13,3 +13,6 @@ I added the ability to click the albums and have a details show above via a null
 
 Phase 3-
 Added delete functionality to the details area by adding a elevated button that sends a Delete object to the input sink with the id of album to delete. It's critial to get the status code becuase if it wasn't deleted then there will be no change.
+
+Phase 4-
+Ran through program a couple times and checked for errors. Had already reformatted a couple things to catch some errors.
