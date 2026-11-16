@@ -7,3 +7,6 @@ The biggest thing is first ironing out the api and checking the data it returns 
 
 Phase 1-
 We created the basics of display and api for data for display in our listView on the main page of our app. The primary difference is how the JSON is structured in the response. you'll need to parse this json into a list if multiple items are returned.
+
+Phase 2-
+I added the ability to click the albums and have a details show above via a nullable variable that defaults to "no album available." This approach changes the page look based on an updated variable as opposed to moving to a new page with new content.
