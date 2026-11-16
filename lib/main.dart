@@ -55,7 +55,6 @@ class _MainPageState extends State<MainPage> {
 
           return Column(
             children: [
-              // Selected Album Details
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
@@ -74,6 +73,12 @@ class _MainPageState extends State<MainPage> {
                     ),
                     Text(
                       "Title: ${selectedAlbum!.title}",
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        bloc.input.add(ADelete(selectedAlbum!.id));
+                      },
+                      child: const Text("Delete Album"),
                     ),
                   ],
                 ),
@@ -98,13 +103,11 @@ class _MainPageState extends State<MainPage> {
             ],
           );
         }
-
         if (state is AError) {
           return Center(
             child: Text(state.message),
           );
         }
-
         return const Center(
           child: Text("Waiting for albums..."),
         );

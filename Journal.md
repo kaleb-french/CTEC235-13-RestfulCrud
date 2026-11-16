@@ -10,3 +10,6 @@ We created the basics of display and api for data for display in our listView on
 
 Phase 2-
 I added the ability to click the albums and have a details show above via a nullable variable that defaults to "no album available." This approach changes the page look based on an updated variable as opposed to moving to a new page with new content.
+
+Phase 3-
+Added delete functionality to the details area by adding a elevated button that sends a Delete object to the input sink with the id of album to delete. It's critial to get the status code becuase if it wasn't deleted then there will be no change.
